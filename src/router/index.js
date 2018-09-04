@@ -1,22 +1,28 @@
 import Vue         from 'vue'
 import Router      from 'vue-router'
-import HelloWorld  from '@/components/HelloWorld'
 import Home        from '@/components/Home'
 import Countries   from '@/components/Countries'
-import Register    from '@/components/Register'
-import Log         from '@/components/Log'
+import RegandLog   from '@/components/RegandLog'
+import Details     from '@/components/Details'
+import Carousel    from '@/components/Carousel'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [ 
-    {path: '/',             name: 'Home',       component: Home  },
-    {path: '/HelloWorld',   name: 'HelloWorld', component: HelloWorld },
-    {path: '/Countries',    name: 'Countries',  component: Countries},
-    {path: '/Register',     name: 'Register',   component: Register},
-    {path: '/Log',          name: 'Log',        component: Log},
+    {path: '/',                 name: 'Home',       component: Home       },
+    
+    {path: '/Countries/:id',    name: 'Countries',  component: Countries, },
+     
+    {path: '/RegandLog/:id',    name: 'RegandLog',  component: RegandLog, },    
+    
+    {path: '/Details/:detail',  name: 'Details',    component: Details,   },
+     
+    
   ],
 
   mode:'history'
 
 })
+
+export default router

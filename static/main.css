@@ -1,9 +1,16 @@
-body{ 
-	   /*background-image: url("http://127.0.0.1/ThinkPHP5.0/public/static/sgspicture/main.jpg");*/
-       background-repeat: no-repeat;
-       /*width:100%; */
-       
-    }
+body{
+	  opacity: 0.75;
+    text-align: center;
+    color: #90683b;
+    background: #ffebd2;
+    font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+    max-width: 1080px;
+    margin: 0 auto;
+}
 
 
-    
+ a{
+ 	text-decoration: none;
+ }
+h1{margin: 5% auto;}
+
