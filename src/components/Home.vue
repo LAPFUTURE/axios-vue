@@ -41,11 +41,13 @@ export default {
   },
  
   created(){
-    
+   
     this.$axios.post(this.apipath.path+"/Dispose/generals").then(res=>{      
       this.$store.state.generals = res.data;
       this.$store.state.comment  = res.data.comment; 
-    }).catch(err=>{console.log(err);});
+    }).catch(err=>{
+      console.log(err);
+    });
   },
    
 }

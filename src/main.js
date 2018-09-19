@@ -6,7 +6,7 @@ import {store}    from'./store/store'
 import router     from './router'
 import Axios      from "axios"
 
-// Vue.prototype.$axios     = Axios
+Vue.prototype.$axios     = Axios
 Vue.config.productionTip = false
 Vue.prototype.apipath    = {path:'ThinkPHP5.0/public/index.php/admin'}
 // Vue.prototype.sgspicture = {path:'http://127.0.0.1/ThinkPHP5.0/public/static/'}
